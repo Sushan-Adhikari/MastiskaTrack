@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-// import Psychotherapy from "./Psychotherapy";
+import Psychotherapy from "./Psychotherapy";
 // import MidSection from "./MidSection";
 import Footer from "./Footer";
 
@@ -29,7 +29,7 @@ const Home = () => {
           </div>
         </section>
 
-        {/* <Psychotherapy /> */}
+        <Psychotherapy />
         {/* <MidSection /> */}
         <Footer />
       </div>
