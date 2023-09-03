@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./Nav";
 import Psychotherapy from "./Psychotherapy";
-// import MidSection from "./MidSection";
+import MidSection from "./MidSection";
 import Footer from "./Footer";
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
         </section>
 
         <Psychotherapy />
-        {/* <MidSection /> */}
+        <MidSection />
         <Footer />
       </div>
     </>
