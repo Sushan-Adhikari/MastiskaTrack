@@ -11,3 +11,4 @@ that needs to be carried out in order to seek help or for a overall better well-
 
 Built during AI crusade(Nepal's first AI hackathon)
 Contibutors: Samman Pathak, Phiroj Kumar Sah, Sushan Adhikari, Darshan Lamichhane
+<a src="github.com/phirojshah"/>
