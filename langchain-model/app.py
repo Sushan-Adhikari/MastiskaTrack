@@ -11,7 +11,7 @@ from htmlTemplates import bot_template, user_template, css
 import os
 from transformers import pipeline
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = ''
 
 
 def get_pdf_text(pdf_files):
@@ -103,7 +103,7 @@ def main():
         st.session_state.chat_history = None
 
     st.header('Screening For Mental Health Issue :brain:')
-    question = st.text_input("Tell your present condition: ")
+    question = st.text_input("Include the answers to the questions for better accuracy: 1) How have you been feeling lately? 2)Have you noticed any changes in your sleep patterns? Are you sleeping more or less than usual? 3)Are you experiencing changes in your appetite or weight? 4)Have you lost interest in activities or hobbies you used to enjoy? 5)Do you find it difficult to concentrate or make decisions? 6)Have you been feeling guilty or worthless? 7)Have you had thoughts of death or suicide? 8)How is your energy level? 9)Have you been isolating yourself from friends and family? 10)Do you experience physical symptoms like headaches or stomachaches?")
 
     if question:
         handle_user_input(question)
