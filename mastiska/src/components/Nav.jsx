@@ -1,6 +1,10 @@
 import React from "react";
+import { navigate } from "@reach/router";
 
 const Nav = () => {
+  const submit = () => {
+    navigate("http://localhost:8502/");
+  };
   return (
     <div
       id="home"
@@ -29,7 +33,7 @@ const Nav = () => {
           </a>
           <ul className="flex ml-10 space-x-6">
             <li className="text-[#141b2c] font-mulish my-4 cursor-pointer relative group transition-all duration-200 hidden lg:block ">
-              <a href="#">Helpline</a>
+              <a href="/help">Helpline</a>
             </li>
             <li className="text-[#141b2c] font-mulish my-4 hidden lg:block cursor-pointer relative group transition-all duration-200 ">
               <a href="#">Self-Care</a>
@@ -45,7 +49,10 @@ const Nav = () => {
             <button className="py-3 my-4 px-5 text-[#141b2c] leading-[27px] text-[18px]">
               Log in
             </button>
-            <button className="py-3 my-4 px-4 rounded-[100px] font-bold text-sm bg-[#4d7f7f] text-white text-[16px] leading-[20px] transition-all duration-200 hover:text-lightBlue500">
+            <button
+              onClick={submit}
+              className="py-3 my-4 px-4 rounded-[100px] font-bold text-sm bg-[#4d7f7f] text-white text-[16px] leading-[20px] transition-all duration-200 hover:text-lightBlue500"
+            >
               Do Our Self-Test
             </button>
           </div>

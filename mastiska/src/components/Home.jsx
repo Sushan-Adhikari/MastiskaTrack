@@ -3,8 +3,12 @@ import Nav from "./Nav";
 import Psychotherapy from "./Psychotherapy";
 import MidSection from "./MidSection";
 import Footer from "./Footer";
+import { navigate } from "@reach/router";
 
 const Home = () => {
+  const submit = () => {
+    navigate("http://localhost:8502/");
+  };
   return (
     <>
       <div
@@ -23,7 +27,10 @@ const Home = () => {
               MastiskaTrack helps in screening <br /> for any mental health
               issues.{" "}
             </p>
-            <button className="py-3 my-4 w-[50%] px-4 rounded-[100px] font-bold text-sm bg-[#4d7f7f] text-white text-[16px] leading-[20px] transition-all duration-200 hover:text-lightBlue500">
+            <button
+              onClick={submit}
+              className="py-3  my-4 w-[50%] px-4 rounded-[100px] font-bold text-sm bg-[#4d7f7f] text-white text-[16px] leading-[20px] transition-all duration-200 hover:text-lightBlue500"
+            >
               Do Our Self-Test
             </button>
           </div>
